@@ -1,0 +1,1 @@
+comand_list = ["user_name" , "user_password" , "version" , "Create_Project" , "start_project" , "help" , "Release"]
