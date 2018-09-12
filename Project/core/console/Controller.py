@@ -111,11 +111,11 @@ class admin:
             text = input()
             BackGround.SearchTemplate('core/Themes/Dark/content.html')
             files = codecs.open("core/Themes/Dark/content.html", "a", 'utf-8')
-            files.write("<h1>" + text + "</h1")
+            files.write("<h1>" + text + "</h1>")
         def AddField(self):
             print(Fore.CYAN + "Введите содержимое :")
             print(Fore.RESET)
             text = input()
             BackGround.SearchTemplate('core/Themes/Dark/content.html')
             files = codecs.open("core/Themes/Dark/content.html", "a", 'utf-8')
-            files.write('<div' + "class=\"" + "jumbotron\"" + text + "</div>")
+            files.write('<div ' + "class=\"" + "jumbotron\"" + ">"+ text + "</div>")

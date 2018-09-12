@@ -19,7 +19,7 @@ class Handler:
             Handler.start('')
         elif(value == comands.admin_comands[2]):
             admin.Add.AddCaption('')
-            Handler.start()
+            Handler.start('')
         elif(value == comands.admin_comands[3]):
             admin.Add.AddField('')
             Handler.start('')
