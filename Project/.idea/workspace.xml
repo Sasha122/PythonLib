@@ -66,7 +66,7 @@
     <session id="-2020770302">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.30" value="1" />
@@ -115,7 +115,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/comand/comands.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
@@ -145,9 +145,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-245" />
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -240,13 +242,13 @@
         <option value="$PROJECT_DIR$/core/comand/comands.py" />
         <option value="$PROJECT_DIR$/core/admin/admin.py" />
         <option value="$PROJECT_DIR$/core/console/Main_Controller.py" />
-        <option value="$PROJECT_DIR$/core/Themes/Dark/content.html" />
         <option value="$PROJECT_DIR$/core/admin/core/Handler.py" />
         <option value="$PROJECT_DIR$/core/console/Controller.py" />
+        <option value="$PROJECT_DIR$/core/Themes/Dark/content.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-477" />
     <option name="y" value="120" />
     <option name="width" value="1382" />
@@ -338,8 +340,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.3296131" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -434,9 +435,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/Themes/Dark/content.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/Themes/Dark/footer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -468,9 +466,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/admin/core/Handler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-10">
@@ -478,6 +473,13 @@
           <folding>
             <marker date="1536745630834" expanded="true" signature="232:237" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/comand/comands.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="7" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -504,11 +506,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/comand/comands.py">
+    <entry file="file://$PROJECT_DIR$/core/Themes/Dark/content.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="7" selection-end-column="1" />
-        </state>
+        <state relative-caret-position="-245" />
       </provider>
     </entry>
   </component>
