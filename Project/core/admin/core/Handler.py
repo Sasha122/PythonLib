@@ -1,7 +1,9 @@
 from colorama import init, Fore, Back, Style
 from core.admin import admin
 from core.comand import comands
+
 from core.console.Controller import  admin
+from core.console import  Controller
 from core.Errors import Errors
 class Handler:
     def start(self):
@@ -9,19 +11,17 @@ class Handler:
         print(Fore.RESET)
         value = input()
         if (value == comands.admin_comands[0]):
-            admin.header('')
+            Controller.admin.Create('')
             Handler.start('')
+
         elif(value == comands.admin_comands[1]):
-            admin.footer('')
-            Handler.start('')
-        elif(value == comands.admin_comands[2]):
             admin.Add.AddParagraph('')
             Handler.start('')
-        elif(value == comands.admin_comands[3]):
+        elif(value == comands.admin_comands[2]):
             admin.Add.AddCaption('')
             Handler.start()
-        elif(value == comands.admin_comands[4]):
-            admin.content('')
+        elif(value == comands.admin_comands[3]):
+            admin.Add.AddField('')
             Handler.start('')
         elif(value == comands.comand_list[5]):
             print( "admin" + str(comands.admin_comands) + "\n\n\n\n" + "default" + str(comands.comand_list))

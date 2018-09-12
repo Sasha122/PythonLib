@@ -46,7 +46,7 @@ def start_app():
         Controller.Command.Debug(value)
         start_app()
     elif(value == comands.comand_list[8]):
-        admin.start('')
+        admin.start_admin('')
     else:
         print( Fore.RED  + value  +  "  -  " + Errors.PrintErrors['3'])
         print(Fore.RESET)

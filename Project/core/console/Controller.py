@@ -75,28 +75,30 @@ class admin:
     def header(self):
         BackGround.SearchTemplate('apps/templates/index.html')
         BackGround.SearchTemplate('core/Themes/Dark/header.html')
-        text = open("core/Themes/Dark/header.html")
+        text = codecs.open("core/Themes/Dark/header.html")
         text_1 = text.read()
         file = codecs.open('apps/templates/index.html', "w" , "utf-8")
         file.write(text_1)
     def footer(self):
         BackGround.SearchTemplate('apps/templates/index.html')
         BackGround.SearchTemplate('core/Themes/Dark/footer.html')
-        text = open("core/Themes/Dark/footer.html")
+        text = codecs.open("core/Themes/Dark/footer.html")
         text_1 = text.read()
-        file = open('apps/templates/index.html', "a")
+        file = codecs.open('apps/templates/index.html', "a")
         file.write(text_1)
     def content(self):
         BackGround.SearchTemplate('apps/templates/index.html')
         BackGround.SearchTemplate('core/Themes/Dark/content.html')
-        text = open("core/Themes/Dark/content.html")
+        text = codecs.open("core/Themes/Dark/content.html")
         text_1 = text.read()
-        file = open('apps/templates/index.html', "a")
+        file = codecs.open('apps/templates/index.html', "a")
         file.write(text_1)
+    def Create(self):
+        admin.header('')
+        admin.content('')
+        admin.footer('')
     class Add:
         def AddParagraph(self):
-
-
             print(Fore.CYAN + "Введите текст абзаца:")
             print(Fore.RESET)
             text = input()
@@ -104,4 +106,16 @@ class admin:
             files = codecs.open("core/Themes/Dark/content.html" , "a" ,'utf-8')
             files.write("<p>" + text + "</p>")
         def AddCaption(self):
-            pass
+            print(Fore.CYAN + "Введите текст Заголовка:")
+            print(Fore.RESET)
+            text = input()
+            BackGround.SearchTemplate('core/Themes/Dark/content.html')
+            files = codecs.open("core/Themes/Dark/content.html", "a", 'utf-8')
+            files.write("<h1>" + text + "</h1")
+        def AddField(self):
+            print(Fore.CYAN + "Введите содержимое :")
+            print(Fore.RESET)
+            text = input()
+            BackGround.SearchTemplate('core/Themes/Dark/content.html')
+            files = codecs.open("core/Themes/Dark/content.html", "a", 'utf-8')
+            files.write('<div' + "class=\"" + "jumbotron\"" + text + "</div>")
