@@ -2,9 +2,15 @@ from config import config
 from core.comand import  comands
 from core.console import Controller
 from core.console import StartProject
+from colorama import init, Fore, Back, Style
+from core.Errors import Errors
+from core.admin import admin
+
 def start_app():
-    print("EnterCommands")
+    print( Fore.CYAN + "PythonSnake->")
+    print(Fore.LIGHTMAGENTA_EX)
     value = input("")
+    print(Fore.RESET)
     if(value == comands.comand_list[0]):
         Controller.User_Name()
         start_app()
@@ -36,8 +42,14 @@ def start_app():
         start_app()
     elif(value == comands.comand_list[6]):
         StartProject.Release()
+    elif(value == comands.comand_list[7]):
+        Controller.Command.Debug(value)
+        start_app()
+    elif(value == comands.comand_list[8]):
+        admin.MainClass.start("")
     else:
-        print("Error")
+        print( Fore.RED  + value  +  "  -  " + Errors.PrintErrors['3'])
+        print(Fore.RESET)
         start_app()
 
 

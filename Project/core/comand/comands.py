@@ -1,1 +1,8 @@
-comand_list = ["user_name" , "user_password" , "version" , "Create_Project" , "start_project" , "help" , "Release"]
+comand_list = ["GET:user-name" , "GET:user-password" ,
+               "GET:version" , "create-project" ,
+               "start-project" , "help" ,
+               "Release" , 'Error-Debug',
+               "admin"]
+admin_comands = [
+
+]

@@ -1,5 +1,6 @@
 import os
 from colorama import init, Fore, Back, Style
+from core.Errors import Errors
 from core.console import StartProject
 init(convert=True)
 
@@ -48,13 +49,24 @@ class BackGround:
             print("OK...Проект успешно создан!")
             print(Fore.RESET)
         else:
-            print(Fore.RED + "Не все файлы созданы")
+            print(Fore.RED + Errors.PrintErrors['1'])
             print(Fore.RESET)
     def Testing(self):
         if (config.theme == "dark" or config.theme == "light"):
             print(Fore.GREEN + "OK...Все данные казанны верно")
             print(Fore.RESET)
         else:
-            print( Fore.RED + "Данные в config указанны не верно:\n"
-                  "theme")
+            print( Fore.RED +  Errors.PrintErrors['1'])
+            print(Fore.RESET)
+class Command:
+    def Debug(self):
+        code = input("Введите код ошибки\n")
+        if (code == "1"):
+            print( Fore.GREEN + Errors.Errors['1'])
+            print(Fore.RESET)
+        elif(code == "2"):
+            print(Fore.GREEN +Errors.Errors['2'])
+            print(Fore.RESET)
+        elif(code == "3"):
+            print(Fore.GREEN + Errors.Errors['3'])
             print(Fore.RESET)
