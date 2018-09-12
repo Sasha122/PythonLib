@@ -1,7 +1,8 @@
 import os
 from colorama import init, Fore, Back, Style
 from core.Errors import Errors
-from core.console import StartProject
+import codecs
+#from core.console import StartProject
 init(convert=True)
 
 
@@ -42,11 +43,11 @@ class BackGround:
     def SearchTemplate(path):
         if(os.path.exists(path)):
             print(Fore.GREEN +"OK...Все файлы для разработки гтовы!")
-            text = open("core/templates/index.html")
-            text_1 = text.read()
-            file = open(path, "w")
-            file.write(text_1)
-            print("OK...Проект успешно создан!")
+           # text = open("core/templates/index.html")
+           # text_1 = text.read()
+           # file = open(path, "w")
+           # file.write(text_1)
+            print("OK...!")
             print(Fore.RESET)
         else:
             print(Fore.RED + Errors.PrintErrors['1'])
@@ -70,3 +71,37 @@ class Command:
         elif(code == "3"):
             print(Fore.GREEN + Errors.Errors['3'])
             print(Fore.RESET)
+class admin:
+    def header(self):
+        BackGround.SearchTemplate('apps/templates/index.html')
+        BackGround.SearchTemplate('core/Themes/Dark/header.html')
+        text = open("core/Themes/Dark/header.html")
+        text_1 = text.read()
+        file = codecs.open('apps/templates/index.html', "w" , "utf-8")
+        file.write(text_1)
+    def footer(self):
+        BackGround.SearchTemplate('apps/templates/index.html')
+        BackGround.SearchTemplate('core/Themes/Dark/footer.html')
+        text = open("core/Themes/Dark/footer.html")
+        text_1 = text.read()
+        file = open('apps/templates/index.html', "a")
+        file.write(text_1)
+    def content(self):
+        BackGround.SearchTemplate('apps/templates/index.html')
+        BackGround.SearchTemplate('core/Themes/Dark/content.html')
+        text = open("core/Themes/Dark/content.html")
+        text_1 = text.read()
+        file = open('apps/templates/index.html', "a")
+        file.write(text_1)
+    class Add:
+        def AddParagraph(self):
+
+
+            print(Fore.CYAN + "Введите текст абзаца:")
+            print(Fore.RESET)
+            text = input()
+            BackGround.SearchTemplate('core/Themes/Dark/content.html')
+            files = codecs.open("core/Themes/Dark/content.html" , "a" ,'utf-8')
+            files.write("<p>" + text + "</p>")
+        def AddCaption(self):
+            pass

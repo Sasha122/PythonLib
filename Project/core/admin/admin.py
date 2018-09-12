@@ -1,6 +1,6 @@
 from colorama import init, Fore, Back, Style
-class MainClass:
-    def start(self):
-        print(Fore.LIGHTCYAN_EX + "PythonSnake-admin")
-        print(Fore.RESET)
-        a = input()
+from core.admin.core import Handler
+from core.admin.settings import settings
+def start(self):
+    print(settings.config['version'])
+    Handler.Handler.start('')

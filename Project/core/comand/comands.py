@@ -4,5 +4,5 @@ comand_list = ["GET:user-name" , "GET:user-password" ,
                "Release" , 'Error-Debug',
                "admin"]
 admin_comands = [
-
+'Create-header','Create-footer', 'Add-Paragraph' , ' Add-Caption' , 'Create-content'
 ]
